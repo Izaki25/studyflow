@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# StudyFlow — Student Task Management Dashboard
+
+StudyFlow is a web-based student productivity dashboard designed to help students organize their academic tasks, manage deadlines, and track their study progress through a clean and user-friendly interface.
+
+## Features
+
+- **Task Management** — Add, view, update, and delete tasks.
+- **Task Organization** — Keep academic activities organized in one dashboard.
+- **Progress Tracking** — Monitor your tasks and completion status.
+- **Dark Mode UI** — A modern, dark-themed interface designed for comfortable viewing.
+- **Local Storage** — Save task data in the browser without requiring a database.
+- **Responsive Design** — Adapt the interface to different screen sizes.
+
+## Technologies Used
+
+- Next.js
+- React
+- TypeScript
+- CSS
+- Browser Local Storage
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Make sure you have the following installed:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Node.js](https://nodejs.org/)
+- npm
+- Git
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Clone the repository:
 
-## Learn More
+   ```bash
+   git clone https://github.com/Izaki25/studyflow.git
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Navigate to the project folder:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   cd studyflow
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Install dependencies:
 
-## Deploy on Vercel
+   ```bash
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Start the development server:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   npm run dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Data Storage
+
+StudyFlow uses browser Local Storage to save task data locally. A separate database is not required. Data is stored in the browser used to access the application.
+
+## Deployment
+
+The application can be deployed using [Vercel](https://vercel.com/).
+
+1. Import the GitHub repository into Vercel.
+2. Configure the project settings if necessary.
+3. Deploy the application.
+4. Open the generated deployment URL to access the website.
+
+## Project Information
+
+- **Project Name:** StudyFlow
+- **Project Type:** Student Productivity Web Application
+- **Purpose:** To help students manage academic tasks and improve organization.
+
+---
+
+Developed as an academic project for ADV101.
