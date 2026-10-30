@@ -47,6 +47,14 @@ const starterTasks: Task[] = [
   },
 ];
 
+function getLocalDateString() {
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = String(now.getMonth() + 1).padStart(2, "0");
+  const day = String(now.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
+}
+
 const emptyForm = {
   title: "",
   subject: "",
@@ -187,6 +195,14 @@ export default function Home() {
     const title = form.title.trim();
     if (!title) {
       setNotice("Please enter a task title.");
+      return;
+    }
+
+    // Due date is optional, but if provided it cannot be in the past.
+    // Compare YYYY-MM-DD strings using the user's local calendar date.
+    const todayString = getLocalDateString();
+    if (form.dueDate && form.dueDate < todayString) {
+      setNotice("Past dates are not allowed. Choose today or a future date.");
       return;
     }
 
@@ -529,6 +545,7 @@ export default function Home() {
                   Due date
                   <input
                     type="date"
+                    min={getLocalDateString()}
                     value={form.dueDate}
                     onChange={(event) => setForm({ ...form, dueDate: event.target.value })}
                   />
