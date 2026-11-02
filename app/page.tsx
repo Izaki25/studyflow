@@ -301,7 +301,7 @@ export default function Home() {
         <div className="sf-focus-card">
           <div className="sf-focus-icon"><Icon name="clock" /></div>
           <h3>Small steps. Big results.</h3>
-          <p>Consistency beats intensity. Keep showing up for yourself.</p>
+          <p>Tarung ug skwela bay.</p>
           <div className="sf-focus-decoration">✳</div>
         </div>
 
@@ -499,7 +499,7 @@ export default function Home() {
             </article>
           </section>
 
-          <footer className="sf-page-footer">Made for better study habits <span>✳</span> StudyFlow © 2026</footer>
+          <footer className="sf-page-footer">Developed By: Kenneth Y. Padilla <span>✳</span> Izaki25 © 2026</footer>
         </div>
       </section>
 
